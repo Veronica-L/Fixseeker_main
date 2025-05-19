@@ -2,13 +2,11 @@
 
 ## Introduction
 
----
-
 To address the challenging problem of detecting silent vulnerability fixes in open source software, we first conduct an empirical study on the various type of correlations in multiple hunks. Based on our findings, we propose Fixseeker, a graph-based approach that extracts the various correlations between code changes at the hunk level to detect silent vulnerability fixes. 
 
-## **Prerequisites**
+![pic](overview.png)
 
----
+## **Prerequisites**
 
 - Python environment: Python 3.8
 - JDK 21
@@ -19,19 +17,13 @@ Note: You can install Joern from github  [https://github.com/joernio/joern](http
 
 ## Empirical Study
 
----
-
 After the manual analysis, we summarize four main hunk correlations: Caller-callee dependency, data flow dependency, control flow dependency and pattern replication. The document of manual analysis is in `empirical/data.csv` .
 
 ## Dataset
 
----
-
 The dataset is available at: [https://drive.google.com/file/d/1TUsX9KQ6mm42VeAMZ4A8arThtm8FLW9Y](https://drive.google.com/file/d/1TUsX9KQ6mm42VeAMZ4A8arThtm8FLW9Y/view?usp=drive_link) , Please download and put dataset inside the data folder.
 
 ## Replication
-
----
 
 1. **Extract hunk correlation**
 
