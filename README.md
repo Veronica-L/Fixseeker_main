@@ -36,7 +36,7 @@ python correlation.py --dataset_path data_test.json --program_language c --balan
 
 The correlation result will be stored in `data/correlation/{PROGRAM_LANGUAGE}_{BALANCE_TYPE}.json`
 
-1. **Train the graph-based model**
+2. **Train the graph-based model**
 
 ```bash
 #Please run:
@@ -45,7 +45,7 @@ python train.py --program_language {pl} --balance_type {type}
 python train.py --program_language c --balance_type imbalance
 ```
 
-1. **RQ4: Performance of Fixseeker**
+3. **RQ4: Performance of Fixseeker**
 
 ```bash
 #Please run:
@@ -54,7 +54,7 @@ python evaluate.py --program_language {pl} --balance_type {type} --model_path {m
 python evaluate.py --program_language c --balance_type imbalance --model_path model.pt --data_path c_imbalance_test.pt
 ```
 
-1. **RQ5: Vulnerability Type**
+4. **RQ5: Vulnerability Type**
 
 ```bash
 #Please run:
@@ -63,7 +63,7 @@ python evaluate_cwe.py --program_language {pl} --model_path {model} --cwe {cwe_n
 python evaluate_cwe.py --program_language c --model_path model.pt --cwe 125
 ```
 
-1. **RQ6: Feature Analysis**
+5. **RQ6: Feature Analysis**
 
 ```bash
 #Please run:
